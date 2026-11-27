@@ -1,1 +1,1 @@
-document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();const q=document.getElementById('searchInput').value.trim();if(!q)return;location.href='search-results.html?q='+encodeURIComponent(q);});document.getElementById('showMore').addEventListener('click',()=>{document.querySelector('.shortcuts').classList.toggle('expanded');});
+document.getElementById('showMore').addEventListener('click',()=>{document.querySelector('.shortcuts').classList.toggle('expanded');});
