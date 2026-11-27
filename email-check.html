@@ -39,7 +39,8 @@
       event.preventDefault();
       const email = document.getElementById('email').value.trim();
       if (!email) return;
-      alert('メールアドレスを確認しました（デモ画面）');
+      sessionStorage.setItem('freeDeathDemoEmail', email);
+      location.href = 'account-choice.html';
     });
   </script>
 </body>
