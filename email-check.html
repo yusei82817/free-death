@@ -35,6 +35,8 @@
     <p>© 1996-2026, Amazon.com, Inc.又はその関連会社</p>
   </footer>
   <script>
+    const emailInput = document.getElementById('email');
+    emailInput.value = sessionStorage.getItem('freeDeathDemoEmail') || '';
     document.getElementById('emailForm').addEventListener('submit', event => {
       event.preventDefault();
       const email = document.getElementById('email').value.trim();
