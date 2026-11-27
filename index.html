@@ -7,7 +7,24 @@
   <title>FREE DEATH | オンラインストア</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>\n  <div class="fake-browser" id="fakeBrowser" aria-label="ブラウザー画面の演出">
+  <div class="browser-tabs">
+    <div class="browser-tab active"><span class="tab-favicon">FD</span><span class="tab-title">FREE DEATH：総合通販</span><span class="tab-close">×</span></div>
+    <button class="new-tab" aria-label="新しいタブ">＋</button>
+    <div class="browser-window-controls"><span>−</span><span>□</span><span>×</span></div>
+  </div>
+  <div class="browser-toolbar">
+    <button class="browser-icon" id="browserBack" aria-label="戻る">‹</button>
+    <button class="browser-icon" id="browserForward" aria-label="進む">›</button>
+    <button class="browser-icon" id="browserReload" aria-label="再読み込み">↻</button>
+    <button class="browser-icon" id="browserHome" aria-label="ホーム">⌂</button>
+    <div class="browser-address"><span class="site-controls">⊙</span><span class="address-origin">shop.freedeath.jp</span><span class="address-path">/</span><input id="fakeAddress" aria-label="アドレスバー" value="https://shop.freedeath.jp/" spellcheck="false"><span class="address-star">☆</span></div>
+    <button class="browser-icon extension-icon" aria-label="拡張機能">▣</button><button class="browser-icon" aria-label="メニュー">⋮</button>
+  </div>
+  <div class="browser-bookmarks">
+    <span class="bookmark-app">▦</span><span class="bookmark-app">▦</span><span class="bookmark-app yellow">▦</span><span class="bookmark-app pink">▦</span><span class="bookmark-app violet">▦</span><span class="bookmark-separator"></span><a href="#">Github</a><a href="#">BOOTH</a><a href="#">検索</a><span class="bookmark-separator"></span><span>▦</span><a href="#">学習用サイト</a><a href="#">ストレージサイト</a><span class="bookmark-spacer"></span><a href="#">»</a><a href="#">すべてのブックマーク</a>
+  </div>
+</div>
   <header class="top-header">
     <a class="brand" href="#" aria-label="FREE DEATH ホーム">FREE<span>DEATH</span><small>.jp</small></a>
     <a class="delivery" href="#"><span class="pin">⌖</span><span><small>お届け先</small><strong>日本国内</strong></span></a>
