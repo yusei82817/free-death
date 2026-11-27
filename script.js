@@ -53,7 +53,7 @@ searchForm.addEventListener("submit", event => {
     if (match) visible++;
   });
   document.getElementById("resultCount").textContent = query ? "検索結果：" + visible + "件" : "全商品を表示中";
-  document.getElementById("all-products").scrollIntoView({ behavior: "smooth" });
+  const firstMatch = cards.find(card => !card.hidden);\n  if (firstMatch) firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 searchInput.addEventListener("input", () => {
   if (!searchInput.value) {
