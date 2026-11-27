@@ -9,20 +9,15 @@
   <link rel="stylesheet" href="product.css">
 </head>
 <body>
-  <div class="fake-browser" aria-label="ブラウザー画面の演出">
-    <div class="browser-tabs"><div class="browser-tab active"><span class="tab-favicon">FD</span><span class="tab-title">1st キズナアイの写真集 | FREE DEATH</span><span class="tab-close">×</span></div><button class="new-tab">＋</button><div class="browser-window-controls"><span>−</span><span>□</span><span>×</span></div></div>
-    <div class="browser-toolbar"><button class="browser-icon" onclick="history.back()">‹</button><button class="browser-icon" onclick="history.forward()">›</button><button class="browser-icon" onclick="location.reload()">↻</button><button class="browser-icon" onclick="location.href='index.html'">⌂</button><div class="browser-address"><span>⊙</span><input value="https://shop.freedeath.jp/dp/B0KIZUNA01" aria-label="アドレスバー" spellcheck="false"><span class="address-star">☆</span></div><button class="browser-icon">▣</button><button class="browser-icon">⋮</button></div>
-    <div class="browser-bookmarks"><span class="bookmark-app">▦</span><span class="bookmark-app">▦</span><span class="bookmark-app yellow">▦</span><span class="bookmark-app pink">▦</span><span class="bookmark-app violet">▦</span><span class="bookmark-separator"></span><a href="#">Github</a><a href="#">BOOTH</a><a href="#">検索</a><span class="bookmark-separator"></span><span>▦</span><a href="#">学習用サイト</a><a href="#">ストレージサイト</a><span class="bookmark-spacer"></span><a href="#">»</a><a href="#">すべてのブックマーク</a></div>
-  </div>
   <header class="top-header">
-    <a class="brand" href="index.html">FREE<span>DEATH</span><small>.jp</small></a>
+    <a class="brand" href="store.html">FREE<span>DEATH</span><small>.jp</small></a>
     <a class="delivery" href="#"><span class="pin">⌖</span><span><small>お届け先</small><strong>日本国内</strong></span></a>
-    <form class="search" action="index.html"><select aria-label="検索カテゴリー"><option>すべて</option><option>本・ホビー</option></select><input name="q" placeholder="FREE DEATHで商品を検索"><button aria-label="検索">⌕</button></form>
+    <form class="search" action="store.html"><select aria-label="検索カテゴリー"><option>すべて</option><option>本・ホビー</option></select><input name="q" placeholder="FREE DEATHで商品を検索"><button aria-label="検索">⌕</button></form>
     <a class="header-link account" href="#"><small>こんにちは</small><strong>アカウント＆リスト</strong></a><a class="header-link orders" href="#"><small>返品もこちら</small><strong>注文履歴</strong></a><a class="cart-link" href="#purchase"><span class="cart-icon">🛒</span><strong>カート</strong><b>0</b></a>
   </header>
-  <nav class="sub-nav"><a href="index.html">☰ すべて</a><a href="index.html#deals">本日のセール</a><a href="index.html#electronics">家電＆カメラ</a><a href="index.html#pc">パソコン・周辺機器</a><a href="index.html#books">本・ホビー</a><span>FREE DEATH おすすめストア</span></nav>
+  <nav class="sub-nav"><a href="store.html">☰ すべて</a><a href="store.html#deals">本日のセール</a><a href="store.html#electronics">家電＆カメラ</a><a href="store.html#pc">パソコン・周辺機器</a><a href="store.html#books">本・ホビー</a><span>FREE DEATH おすすめストア</span></nav>
   <main class="detail-main">
-    <div class="breadcrumbs"><a href="index.html">FREE DEATH</a> › <a href="index.html#books">本・ホビー</a> › 写真集</div>
+    <div class="breadcrumbs"><a href="store.html">FREE DEATH</a> › <a href="store.html#books">本・ホビー</a> › 写真集</div>
     <div class="detail-layout">
       <section class="detail-gallery"><div class="detail-main-image"><img src="assets/products/photography-book.jpg" alt="1st キズナアイの写真集"></div><div class="thumb-row"><button class="thumb active"><img src="assets/products/photography-book.jpg" alt="商品画像 1"></button><button class="thumb"><img src="assets/products/photography-book.jpg" alt="商品画像 2"></button><button class="thumb"><img src="assets/products/photography-book.jpg" alt="商品画像 3"></button></div><p class="image-caption">画像をクリックして拡大</p></section>
       <section class="detail-info"><h1>1st キズナアイの写真集</h1><a class="seller-link" href="#">FREE DEATH 出品者ページ</a><div class="detail-rating"><span>★★★★☆</span> <a href="#reviews">4.6（216件の評価）</a></div><div class="rank-note">過去1か月で 100点以上購入されました</div><hr><div class="detail-price"><span class="price-prefix">価格:</span> <strong>¥700</strong> <span class="tax-note">税込</span></div><p class="coupon"><span>✓</span> 期間限定キャンペーン対象商品</p><p class="detail-description">キズナアイの魅力を一冊にまとめたファースト写真集。さまざまなビジュアルと撮り下ろしカットを収録した、ファン必見の一冊です。</p><table class="spec-table"><tr><th>出版社</th><td>FREE DEATH BOOKS</td></tr><tr><th>発売日</th><td>2026年10月15日</td></tr><tr><th>ページ数</th><td>96ページ</td></tr><tr><th>形式</th><td>単行本</td></tr><tr><th>カテゴリー</th><td>本・ホビー / 写真集</td></tr></table><div class="detail-share"><a href="#">この商品を共有</a>　<a href="#reviews">レビューを見る</a></div></section>
@@ -68,9 +63,6 @@
     document.getElementById('addDetailCart').addEventListener('click',()=>showToast('カートに追加しました'));
     document.getElementById('buyNow').addEventListener('click',()=>{location.href='email-check.html'});
     document.querySelectorAll('.thumb').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.thumb').forEach(item=>item.classList.remove('active'));button.classList.add('active')}));
-    const keys=new Set(['a','s','d']),pressed=new Set();let entering=false;
-    window.addEventListener('keydown',async event=>{const key=event.key.toLowerCase();if(!keys.has(key))return;if(/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName))return;pressed.add(key);if(pressed.size===3&&!entering&&!document.fullscreenElement){entering=true;try{await document.documentElement.requestFullscreen()}catch(e){}finally{entering=false}}});
-    window.addEventListener('keyup',event=>pressed.delete(event.key.toLowerCase()));window.addEventListener('blur',()=>pressed.clear());
   </script>
 </body>
 </html>
