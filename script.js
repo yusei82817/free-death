@@ -104,3 +104,23 @@ searchInput.addEventListener("input", () => {
     }
   });
 })();
+
+
+// Open the dedicated product detail page when the photo-book card is clicked.
+document.querySelectorAll('.product-card').forEach(card => {
+  if ((card.dataset.name || '').includes('キズナアイ')) {
+    card.style.cursor = 'pointer';
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'link');
+    card.addEventListener('click', event => {
+      if (event.target.closest('button')) return;
+      location.href = 'product.html';
+    });
+    card.addEventListener('keydown', event => {
+      if ((event.key === 'Enter' || event.key === ' ') && event.target === card) {
+        event.preventDefault();
+        location.href = 'product.html';
+      }
+    });
+  }
+});
