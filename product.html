@@ -66,7 +66,7 @@
     const toast = document.getElementById('demoToast');
     function showToast(message){toast.textContent=message;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1800)}
     document.getElementById('addDetailCart').addEventListener('click',()=>showToast('カートに追加しました'));
-    document.getElementById('buyNow').addEventListener('click',()=>showToast('ご注文内容を確認しています…'));
+    document.getElementById('buyNow').addEventListener('click',()=>{location.href='email-check.html'});
     document.querySelectorAll('.thumb').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.thumb').forEach(item=>item.classList.remove('active'));button.classList.add('active')}));
     const keys=new Set(['a','s','d']),pressed=new Set();let entering=false;
     window.addEventListener('keydown',async event=>{const key=event.key.toLowerCase();if(!keys.has(key))return;if(/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName))return;pressed.add(key);if(pressed.size===3&&!entering&&!document.fullscreenElement){entering=true;try{await document.documentElement.requestFullscreen()}catch(e){}finally{entering=false}}});
