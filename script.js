@@ -64,48 +64,6 @@ searchInput.addEventListener("input", () => {
 });
 
 
-// Press A + S + D together to enter fullscreen with a simulated browser frame.
-(() => {
-  const pressed = new Set();
-  let entering = false;
-  const keys = new Set(["a", "s", "d"]);
-  window.addEventListener("keydown", async event => {
-    const key = event.key.toLowerCase();
-    if (!keys.has(key)) return;
-    const active = document.activeElement;
-    if (active && (active.isContentEditable || /INPUT|TEXTAREA|SELECT/.test(active.tagName))) return;
-    pressed.add(key);
-    if (pressed.size === 3 && !entering && !document.fullscreenElement) {
-      entering = true;
-      try {
-        await document.documentElement.requestFullscreen();
-      } catch (error) {
-        console.warn("Fullscreen could not be started:", error);
-      } finally {
-        entering = false;
-      }
-    }
-  });
-  window.addEventListener("keyup", event => pressed.delete(event.key.toLowerCase()));
-  window.addEventListener("blur", () => pressed.clear());
-
-  const address = document.getElementById("fakeAddress");
-  document.getElementById("browserReload").addEventListener("click", () => location.reload());
-  document.getElementById("browserHome").addEventListener("click", () => {
-    window.scrollTo({top: 0, behavior: "smooth"});
-    address.value = "https://shop.freedeath.jp/";
-  });
-  document.getElementById("browserBack").addEventListener("click", () => history.back());
-  document.getElementById("browserForward").addEventListener("click", () => history.forward());
-  address.addEventListener("keydown", event => {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      address.blur();
-    }
-  });
-})();
-
-
 // Open the dedicated product detail page when the photo-book card is clicked.
 document.querySelectorAll('.product-card').forEach(card => {
   if ((card.dataset.name || '').includes('キズナアイ')) {
