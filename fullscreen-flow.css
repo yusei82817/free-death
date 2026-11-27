@@ -1,0 +1,1 @@
+body.flow-pseudo-fullscreen{position:fixed!important;inset:0!important;width:100%!important;height:100%!important;overflow:auto!important;z-index:99999!important;margin:0!important;background:#fff!important}body.flow-pseudo-fullscreen .fake-browser{display:block!important;position:sticky!important;top:0!important;z-index:100000!important}
