@@ -70,7 +70,7 @@ searchInput.addEventListener("input", () => {
   const keys = new Set(["a", "s", "d"]);
   window.addEventListener("keydown", async event => {
     const key = event.key.toLowerCase();
-    if (!keys.has(key)) return;
+    if (!keys.has(key)) return;\n    const active = document.activeElement;\n    if (active && (active.isContentEditable || /INPUT|TEXTAREA|SELECT/.test(active.tagName))) return;
     pressed.add(key);
     if (pressed.size === 3 && !entering && !document.fullscreenElement) {
       entering = true;
