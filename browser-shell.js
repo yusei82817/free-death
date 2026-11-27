@@ -75,7 +75,7 @@
   initialFrame.addEventListener('load',()=>{if(active===tabs[0])sync();});
   document.getElementById('browserBack').addEventListener('click',()=>{try{active.frame.contentWindow.history.back();}catch(_){}});
   document.getElementById('browserForward').addEventListener('click',()=>{try{active.frame.contentWindow.history.forward();}catch(_){}});
-  document.getElementById('browserReload').addEventListener('click',()=>{try{active.frame.contentWindow.location.reload();}catch(_){}});
+  document.getElementById('browserReload').addEventListener('click',()=>{try{const w=active.frame.contentWindow;const current=w.location.href;w.location.replace(current);}catch(_){active.frame.src=active.frame.src;}});
   document.getElementById('browserHome').addEventListener('click',()=>{active.frame.src='store.html';active.url='store.html';});
   address.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();address.blur();}});
   const keys=new Set(['a','s','d']);let pressed=new Set(),busy=false;
