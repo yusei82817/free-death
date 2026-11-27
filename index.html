@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131921">
+  <title>FREE DEATH | オンラインストア</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-header">
+    <a class="brand" href="#" aria-label="FREE DEATH ホーム">FREE<span>DEATH</span><small>.jp</small></a>
+    <a class="delivery" href="#"><span class="pin">⌖</span><span><small>お届け先</small><strong>日本国内</strong></span></a>
+    <form class="search" id="searchForm">
+      <select aria-label="検索カテゴリー"><option>すべて</option><option>家電</option><option>パソコン</option><option>日用品</option><option>食品</option></select>
+      <input id="searchInput" type="search" placeholder="FREE DEATHで商品を検索">
+      <button aria-label="検索">⌕</button>
+    </form>
+    <a class="header-link account" href="#"><small>こんにちは</small><strong>アカウント＆リスト</strong></a>
+    <a class="header-link orders" href="#"><small>返品もこちら</small><strong>注文履歴</strong></a>
+    <a class="cart-link" href="#cart"><span class="cart-icon">🛒</span><strong>カート</strong><b id="cartCount">0</b></a>
+  </header>
+
+  <nav class="sub-nav">
+    <a href="#categories">☰ すべて</a><a href="#deals">本日のセール</a><a href="#electronics">家電＆カメラ</a><a href="#pc">パソコン・周辺機器</a><a href="#daily">日用品</a><a href="#food">食品・飲料</a><a href="#books">本・ホビー</a>
+    <span>FREE DEATH おすすめストア</span>
+  </nav>
+
+  <main>
+    <section class="hero" aria-label="キャンペーン">
+      <div class="hero-copy"><p class="eyebrow">FREE DEATH ONLINE STORE</p><h1>毎日の「ほしい」が、<br>ここにある。</h1><p>新しいお気に入りを見つけよう。</p><a href="#deals" class="hero-button">おすすめ商品を見る ›</a></div>
+      <div class="hero-art"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="hero-cube">FD</div><span>FIND YOUR<br>NEW FAVORITE</span></div>
+    </section>
+
+    <section class="quick-categories" id="categories">
+      <a href="#electronics">家電・カメラ</a><a href="#pc">PC・周辺機器</a><a href="#daily">日用品</a><a href="#food">食品・飲料</a><a href="#books">本・ホビー</a><a href="#fashion">ファッション</a>
+    </section>
+
+    <section class="panel deal-panel" id="deals">
+      <div class="section-heading"><div><p class="section-kicker">LIMITED TIME</p><h2>本日のおすすめ</h2></div><a href="#all-products">すべて見る ›</a></div>
+      <div class="product-grid" id="featuredGrid">
+        <article class="product-card" data-name="ノイズキャンセリング ワイヤレスヘッドホン" data-category="家電">
+          <div class="product-image"><img src="assets/products/wireless-headphones.jpg" alt="ノイズキャンセリング ワイヤレスヘッドホン"><span class="discount">20% OFF</span></div><p class="product-name">ノイズキャンセリング ワイヤレスヘッドホン</p><div class="rating">★★★★★ <small>(1,284)</small></div><p class="price"><strong>¥8,980</strong> <del>¥11,200</del></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button>
+        </article>
+        <article class="product-card" data-name="薄型ワイヤレスメカニカルキーボード" data-category="パソコン">
+          <div class="product-image"><img src="assets/products/mechanical-keyboard.jpg" alt="薄型ワイヤレスメカニカルキーボード"><span class="discount">15% OFF</span></div><p class="product-name">薄型ワイヤレスメカニカルキーボード</p><div class="rating">★★★★☆ <small>(862)</small></div><p class="price"><strong>¥6,480</strong> <del>¥7,600</del></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button>
+        </article>
+        <article class="product-card" data-name="スマートウォッチ Lite" data-category="家電">
+          <div class="product-image"><img src="assets/products/smartwatch-lite.jpg" alt="スマートウォッチ Lite"></div><p class="product-name">スマートウォッチ Lite</p><div class="rating">★★★★☆ <small>(532)</small></div><p class="price"><strong>¥5,980</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button>
+        </article>
+        <article class="product-card" data-name="ポータブル Bluetooth スピーカー" data-category="家電">
+          <div class="product-image"><img src="assets/products/bluetooth-speaker.jpg" alt="ポータブル Bluetooth スピーカー"><span class="discount">限定価格</span></div><p class="product-name">ポータブル Bluetooth スピーカー</p><div class="rating">★★★★★ <small>(2,041)</small></div><p class="price"><strong>¥3,280</strong></p><p class="delivery-note">残りわずか</p><button class="add-cart">カートに入れる</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="electronics"><div class="section-heading"><div><p class="section-kicker">TECH & GADGETS</p><h2>家電・カメラ</h2></div><a href="#all-products">家電をもっと見る ›</a></div><div class="product-grid">
+      <article class="product-card" data-name="4K対応 ミラーレスデジタルカメラ"><div class="product-image"><img src="assets/products/mirrorless-camera.jpg" alt="4K対応 ミラーレスデジタルカメラ"></div><p class="product-name">4K対応 ミラーレスデジタルカメラ</p><div class="rating">★★★★★ <small>(418)</small></div><p class="price"><strong>¥62,800</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="完全ワイヤレスイヤホン Pro"><div class="product-image"><img src="assets/products/wireless-earbuds.jpg" alt="完全ワイヤレスイヤホン Pro"></div><p class="product-name">完全ワイヤレスイヤホン Pro</p><div class="rating">★★★★☆ <small>(3,105)</small></div><p class="price"><strong>¥4,980</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="コンパクト 空気清浄機"><div class="product-image"><img src="assets/products/air-purifier.jpg" alt="コンパクト 空気清浄機"></div><p class="product-name">コンパクト 空気清浄機</p><div class="rating">★★★★☆ <small>(276)</small></div><p class="price"><strong>¥12,800</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="電気ケトル 1.0L ステンレス"><div class="product-image"><img src="assets/products/electric-kettle.jpg" alt="電気ケトル 1.0L ステンレス"></div><p class="product-name">電気ケトル 1.0L ステンレス</p><div class="rating">★★★★☆ <small>(957)</small></div><p class="price"><strong>¥2,780</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+    </div></section>
+
+    <section class="panel" id="pc"><div class="section-heading"><div><p class="section-kicker">PC & ACCESSORIES</p><h2>パソコン・周辺機器</h2></div><a href="#all-products">もっと見る ›</a></div><div class="product-grid">
+      <article class="product-card" data-name="27インチ フルHDモニター"><div class="product-image"><img src="assets/products/27inch-monitor.jpg" alt="27インチ フルHDモニター"></div><p class="product-name">27インチ フルHDモニター</p><div class="rating">★★★★☆ <small>(721)</small></div><p class="price"><strong>¥16,800</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="静音ワイヤレスマウス"><div class="product-image"><img src="assets/products/wireless-mouse.jpg" alt="静音ワイヤレスマウス"></div><p class="product-name">静音ワイヤレスマウス</p><div class="rating">★★★★☆ <small>(1,090)</small></div><p class="price"><strong>¥1,680</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="USB-C 7 in 1 ハブ"><div class="product-image"><img src="assets/products/usb-c-hub.jpg" alt="USB-C 7 in 1 ハブ"></div><p class="product-name">USB-C 7 in 1 ハブ</p><div class="rating">★★★★★ <small>(348)</small></div><p class="price"><strong>¥2,490</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="ノートPCスタンド アルミ製"><div class="product-image"><img src="assets/products/laptop-stand.jpg" alt="ノートPCスタンド アルミ製"></div><p class="product-name">ノートPCスタンド アルミ製</p><div class="rating">★★★★☆ <small>(609)</small></div><p class="price"><strong>¥2,980</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+    </div></section>
+
+    <section class="panel" id="daily"><div class="section-heading"><div><p class="section-kicker">DAILY ESSENTIALS</p><h2>日用品・ホーム用品</h2></div><a href="#all-products">もっと見る ›</a></div><div class="product-grid">
+      <article class="product-card" data-name="ふんわりマイクロファイバー バスタオル"><div class="product-image"><img src="assets/products/bath-towel.jpg" alt="ふんわりマイクロファイバー バスタオル"></div><p class="product-name">ふんわりマイクロファイバー バスタオル</p><div class="rating">★★★★☆ <small>(1,522)</small></div><p class="price"><strong>¥1,280</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="ステンレス 真空断熱ボトル 500ml"><div class="product-image"><img src="assets/products/thermal-bottle.jpg" alt="ステンレス 真空断熱ボトル 500ml"></div><p class="product-name">ステンレス 真空断熱ボトル 500ml</p><div class="rating">★★★★★ <small>(2,018)</small></div><p class="price"><strong>¥1,980</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="折りたたみ収納ボックス 3個セット"><div class="product-image"><img src="assets/products/storage-box.jpg" alt="折りたたみ収納ボックス 3個セット"></div><p class="product-name">折りたたみ収納ボックス 3個セット</p><div class="rating">★★★★☆ <small>(384)</small></div><p class="price"><strong>¥2,380</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="デスク用 LED ライト"><div class="product-image"><img src="assets/products/desk-light.jpg" alt="デスク用 LED ライト"></div><p class="product-name">デスク用 LED ライト</p><div class="rating">★★★★☆ <small>(845)</small></div><p class="price"><strong>¥2,680</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+    </div></section>
+
+    <section class="panel" id="food"><div class="section-heading"><div><p class="section-kicker">FOOD & DRINK</p><h2>食品・飲料</h2></div><a href="#all-products">もっと見る ›</a></div><div class="product-grid">
+      <article class="product-card" data-name="オリジナルブレンド コーヒー豆 400g"><div class="product-image"><img src="assets/products/coffee-beans.jpg" alt="オリジナルブレンド コーヒー豆 400g"></div><p class="product-name">オリジナルブレンド コーヒー豆 400g</p><div class="rating">★★★★★ <small>(2,401)</small></div><p class="price"><strong>¥1,480</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="ミネラルウォーター 2L 6本セット"><div class="product-image"><img src="assets/products/mineral-water.jpg" alt="ミネラルウォーター 2L 6本セット"></div><p class="product-name">ミネラルウォーター 2L 6本セット</p><div class="rating">★★★★☆ <small>(3,882)</small></div><p class="price"><strong>¥980</strong></p><p class="delivery-note">まとめ買い対象</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="国産はちみつ 300g"><div class="product-image"><img src="assets/products/honey-jar.jpg" alt="国産はちみつ 300g"></div><p class="product-name">国産はちみつ 300g</p><div class="rating">★★★★★ <small>(692)</small></div><p class="price"><strong>¥1,760</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="チョコレートアソート 24個入り"><div class="product-image"><img src="assets/products/chocolate-assort.jpg" alt="チョコレートアソート 24個入り"></div><p class="product-name">チョコレートアソート 24個入り</p><div class="rating">★★★★☆ <small>(1,176)</small></div><p class="price"><strong>¥1,290</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+    </div></section>
+
+    <section class="panel" id="books"><div class="section-heading"><div><p class="section-kicker">BOOKS & HOBBY</p><h2>本・ホビー</h2></div><a href="#all-products">もっと見る ›</a></div><div class="product-grid">
+      <article class="product-card" data-name="週末から始める写真撮影ガイド"><div class="product-image"><img src="assets/products/photography-book.jpg" alt="週末から始める写真撮影ガイド"></div><p class="product-name">週末から始める写真撮影ガイド</p><div class="rating">★★★★☆ <small>(216)</small></div><p class="price"><strong>¥1,650</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="木製 立体パズル クラシックカー"><div class="product-image"><img src="assets/products/wooden-puzzle-car.jpg" alt="木製 立体パズル クラシックカー"></div><p class="product-name">木製 立体パズル クラシックカー</p><div class="rating">★★★★★ <small>(148)</small></div><p class="price"><strong>¥2,200</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="アクリルカラーペン 36色セット"><div class="product-image"><img src="assets/products/acrylic-pens.jpg" alt="アクリルカラーペン 36色セット"></div><p class="product-name">アクリルカラーペン 36色セット</p><div class="rating">★★★★☆ <small>(503)</small></div><p class="price"><strong>¥1,980</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="ミニチュア 建築模型キット"><div class="product-image"><img src="assets/products/miniature-house-kit.jpg" alt="ミニチュア 建築模型キット"></div><p class="product-name">ミニチュア 建築模型キット</p><div class="rating">★★★★☆ <small>(91)</small></div><p class="price"><strong>¥3,480</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+    </div></section>
+
+    <section class="panel" id="fashion"><div class="section-heading"><div><p class="section-kicker">FASHION</p><h2>ファッション</h2></div><a href="#all-products">もっと見る ›</a></div><div class="product-grid">
+      <article class="product-card" data-name="ベーシック コットンTシャツ"><div class="product-image"><img src="assets/products/cotton-tshirt.jpg" alt="ベーシック コットンTシャツ"></div><p class="product-name">ベーシック コットンTシャツ</p><div class="rating">★★★★☆ <small>(1,044)</small></div><p class="price"><strong>¥1,490</strong></p><p class="delivery-note">カラー・サイズ選択可</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="キャンバス デイリートートバッグ"><div class="product-image"><img src="assets/products/canvas-tote.jpg" alt="キャンバス デイリートートバッグ"></div><p class="product-name">キャンバス デイリートートバッグ</p><div class="rating">★★★★★ <small>(637)</small></div><p class="price"><strong>¥1,780</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="軽量ランニングスニーカー"><div class="product-image"><img src="assets/products/running-sneakers.jpg" alt="軽量ランニングスニーカー"></div><p class="product-name">軽量ランニングスニーカー</p><div class="rating">★★★★☆ <small>(752)</small></div><p class="price"><strong>¥4,980</strong></p><p class="delivery-note">通常配送無料</p><button class="add-cart">カートに入れる</button></article>
+      <article class="product-card" data-name="シンプル アナログ腕時計"><div class="product-image"><img src="assets/products/analog-watch.jpg" alt="シンプル アナログ腕時計"></div><p class="product-name">シンプル アナログ腕時計</p><div class="rating">★★★★☆ <small>(328)</small></div><p class="price"><strong>¥3,680</strong></p><p class="delivery-note">明日お届け</p><button class="add-cart">カートに入れる</button></article>
+    </div></section>
+
+    <section class="panel search-results" id="all-products"><div class="section-heading"><div><p class="section-kicker">DISCOVER</p><h2>商品を探す</h2></div><span id="resultCount">全商品を表示中</span></div><p class="search-hint">上部の検索バーから商品名で絞り込めます。</p></section>
+    <section class="panel cart-panel" id="cart"><div class="section-heading"><div><p class="section-kicker">YOUR CART</p><h2>カート</h2></div><span id="cartSummary">0点の商品</span></div><div id="cartItems" class="cart-items">カートに商品はありません。</div></section>
+  </main>
+
+  <footer><a class="footer-top" href="#">ページの先頭へ戻る ↑</a><div class="footer-main"><div><strong>FREE DEATH</strong><p>毎日の「ほしい」が、ここにある。</p></div><div><strong>FREE DEATHについて</strong><a href="#">会社情報</a><a href="#">お知らせ</a></div><div><strong>ヘルプ＆ガイド</strong><a href="#">配送について</a><a href="#">お問い合わせ</a></div><div><strong>ご利用案内</strong><a href="#">利用規約</a><a href="#">プライバシー</a></div></div><div class="footer-bottom">© 2026 FREE DEATH. All rights reserved.</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
