@@ -53,7 +53,8 @@ searchForm.addEventListener("submit", event => {
     if (match) visible++;
   });
   document.getElementById("resultCount").textContent = query ? "検索結果：" + visible + "件" : "全商品を表示中";
-  const firstMatch = cards.find(card => !card.hidden);\n  if (firstMatch) firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+  const firstMatch = cards.find(card => !card.hidden);
+  if (firstMatch) firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 searchInput.addEventListener("input", () => {
   if (!searchInput.value) {
@@ -70,7 +71,9 @@ searchInput.addEventListener("input", () => {
   const keys = new Set(["a", "s", "d"]);
   window.addEventListener("keydown", async event => {
     const key = event.key.toLowerCase();
-    if (!keys.has(key)) return;\n    const active = document.activeElement;\n    if (active && (active.isContentEditable || /INPUT|TEXTAREA|SELECT/.test(active.tagName))) return;
+    if (!keys.has(key)) return;
+    const active = document.activeElement;
+    if (active && (active.isContentEditable || /INPUT|TEXTAREA|SELECT/.test(active.tagName))) return;
     pressed.add(key);
     if (pressed.size === 3 && !entering && !document.fullscreenElement) {
       entering = true;
